@@ -1,0 +1,386 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+
+body {background-color: #f38e59;
+    position: relative;
+    z-index: 100;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    font: "proxima-nova", sans-serif;
+    
+}
+h2 {
+    padding-bottom: 7%;
+}
+.articleAside {
+    padding-bottom: 5%;
+}
+
+.divh {
+    display: inline;
+}
+
+
+header { background-color: #f38e59;
+    color:white ;
+}
+
+.h1 {
+    text-align: center;
+    font-size: 3.5em;
+text-transform: uppercase;
+color: #fff;
+font-weight: 600;
+margin: 0;
+}
+
+.h2 { 
+    font-weight: 400;
+    font-size: 1.2em;
+    max-width: 1080px;
+    text-align: center;
+    margin: auto;
+    line-height: 1.5em;
+    padding-top: 1em;
+    color: black;
+    padding-bottom: 8%;
+}
+
+main {
+    display: flex;
+    background-color: white;
+
+}
+
+.firstA { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.secondA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6%;
+    padding-right: 10%;
+}
+
+input {
+    margin-top: 5%;
+    font: 300 1em/1.35rem "proxima-nova", sans-serif;
+    color: #7F8C97;
+    padding: .6rem .8rem;
+    border: 1px solid #C0C6CC;
+    background: #fff;
+    width: 100%;
+    border-radius: 0.4rem;
+    transition: all 0.15s ease;
+}
+
+.article {
+    padding-bottom: 5%;
+    line-height: 140%;
+    font-size: 1.2em;
+    padding-top: 0;
+    padding-left: 5%;
+}
+
+div {
+    display: flex;
+}  
+.inputMess{
+    padding-bottom: 30%;
+
+}
+
+
+.H2Main {
+    text-transform: uppercase;
+    font-size: 1.9em;
+    color: #5BB5DE;
+    font-weight: 600;
+}
+
+a {
+    color: #F49B6C;
+    text-decoration: none;
+}
+
+
+.btn { 
+    font-size: 80%;
+line-height: 80%;
+padding: 1.6rem 3.3rem 1.5rem;
+text-transform: uppercase;
+color: #fff;
+font-weight: 700;
+border-radius: 0.3rem;
+background-color: #F49B6C;
+cursor: pointer;
+margin-top: 3em;
+
+}
+.btn:hover {
+    background-color:#c06d41 ;
+}
+
+footer {
+    background-color: rgb(49, 46, 46);
+    color: grey;
+}
+
+.Finheader {
+    padding-left:35% ;
+    background-color: white;
+    padding-bottom: 7%;
+}
+
+
+.FinFooter {
+    background-color:#333333;
+    color: grey;
+}
+
+ul { 
+    list-style: none;
+    padding-left: 5%;
+    padding-top: 2%
+}
+
+.AFooter {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+li {
+    padding-top:2% ; 
+    padding-bottom: 7%;
+}
+
+.MainFooter {
+    background: #404040;
+
+}
+.Textfoot {
+    padding-left: 8%;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1em;
+}
+
+.Titre {
+    color: white;
+}
+
+
+
+ nav{ /* Ma nav regroupe les liens de la barre du menu (tout en haut de la page) */
+    display: flex; /* display flex => si on ne précise pas le "flex-direction" c'est qu'il est en row */
+    align-items: center; /* "align-items" aligne les objets sur l'axe secondaire */
+    padding: 1% 9%; /*  le padding prend de l'espace dans la boite. La 1ère valeur: haut et bas, la 2ème : gauche et droit */
+    position: fixed; /* Pour fixer la barre en haut même si on scroll en bas */
+    background-color: #f38e59;
+    width: 100%;
+    justify-content: space-around;
+}
+
+nav a{
+    color: var(--body-white);
+    background-color: #f38e59;
+}
+
+.linkLeft{
+    margin-right: 4%;
+}
+
+.linksLeft, .linksMiddle, .linksRight{
+    display: flex;
+    align-items: center;
+}
+
+.dropdownMenu{
+    margin: 1% 4%;
+    position: relative;
+    display: inline-block;
+}
+
+.childLinks{
+    padding: 16px;
+    font-size: 16px;
+}
+
+.linksMiddle a:hover{
+    background-color: var(--body-white);
+    color: var(--body-black);
+    transition: 0.5s;
+}
+
+.navBtn{
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 5px;
+}
+
+.left{
+    width: 200px;
+    background-color: #02202f;
+}
+
+.left:hover{
+    background-color: #044160;
+    transition: 0.5s;
+}
+
+.right{
+    width: 100px;
+    border: solid white 2px;
+
+}
+
+.right:hover{
+    background-color: #ffffff33;
+    transition: 0.5s;
+}
+
+.burger{
+    display: none;
+    width: 55px;
+    height: 50px;
+    padding: 2%;
+    border: solid 1px white;
+    margin-left: 2%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.closeButton{
+    width: 50px;
+    float: right;
+    border: solid 1px white;
+    border-radius: 6px;
+    margin: 2%;
+    cursor: pointer;
+}
+
+.sideMenu{
+    display: none;
+    position: absolute;
+    background-color: #3292c6e1;
+    width: 100%;
+    height: 410%;
+}
+
+.sideMenuLinks{
+    display: none;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--body-white);
+    margin-top: 15%;
+}
+
+.sideMenuLinks a{
+    color: var(--body-black);
+    text-align: center;
+    padding: 4% 0;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.sideMenuLinks i{
+    font-size: 15px;
+}
+
+header h1, header h2{
+    text-align: center;
+}
+
+header h1{
+    padding-top: 15%;
+    font-size: 70px;
+    color: var(--body-white);
+}
+
+header h2{
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 1% 0 6% 0;
+}
+
+/* Animation Hover Menu */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: var(--body-white);
+    min-width: 160px;
+    z-index: 1;
+    margin-top: 7%;
+}
+
+.dropdown-content a{
+    color: var(--body-black);
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    color: #7c7a7a !important;
+    transition: 0.5s;
+}
+
+.dropdownMenu:hover .dropdown-content {
+    display: block;
+}
+
+.footerBtnLink{
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    background-color: #02202f;
+    padding: 4% 8% ;
+    color: white ;
+}
+
+.footerBtnLink:hover{
+    background-color: #020e14;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1024px){
+    body {
+        background-color: white;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .firstmain {
+        display: inline;
+       
+    }
+    .firstA {
+        margin-right: 13%;
+        margin-left: 4%;
+    }
+    .secondA {
+        margin-right: 13%;
+        margin-left: 4%;
+
+    }
+    .MainFooter {
+        display: inline;
+    }
+}
